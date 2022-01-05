@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <title>TechnoColor</title>
+    </head>
+    
+    <body>
+        <div class="contacts_1">
+            <span class="fa fa-envelope"></span>
+            <span>technocolor@yahoo.com</span>
+        </div>
+        <div class="contacts_2">
+            <span class="fa fa-phone"></span>
+            <span>+370 600 54698</span>
+        </div>
+
+        <div class="title">
+            <img src="images/logo.jpg" alt="Company logo" style="width:5%">
+            <span>T e c h n o</span>
+            <span style='color: blue'>c</span>
+            <span style='color: red'>o</span>
+            <span style='color: blue'>l</span>
+            <span style='color: yellow'>o</span>
+            <span style='color: blue'>r</span>
+        </div>
+        
+        <p id="description">Computers, notebooks, monitors, brand technology for entertainment and household.</p>
+        
+        <div id="my_cart">
+                <p id="cart_text">My cart</p>
+                <i id="cart_icon" class="fas fa-shopping-cart"></i>
+                <b> </b><p id="items_in_cart">0</p>
+            </div>
+            
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Main</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="shop.html">Online shop</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="about_us.html">About us</a>
+            </li>
+            </ul>
+        </nav>
+
+        <div style="width: 60%; height: 100px; float: left;"> 
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/pc.jpg" alt="Personal computer advertisment">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/laptop.jpg" alt="Laptop advertisment">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/monitor.jpg" alt="Monitors advertisment">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        
+        <div id="accordion" style="margin-left: 68%; height: 100px; width: 355px"> 
+            <h4>FAQ (frequently asked questions)</h4>
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        What is a processor, and which ones are the best?
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        The processor, or CPU, is the bit of your computer that gets all the hard work done.<br>
+                        A high "clock speed" (which is how fast your CPU works, and is measured in GHz) is also good, but it's only relevant if you're comparing similar processors with a similar number of cores.<br>
+                        For Intel processors, you'll commonly see i3, i5, and i7. The bigger the number, the faster the processor will be – generally, anyway.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        What operating system do I need?
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        The operating system (OS) is basically the raw software that your computer runs on.<br>
+                        It controls how your computer works, what you see on the screen, and the content you have access to.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        How much RAM or memory do I need?
+                     </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        RAM, or memory, is just where your computer stores everything it's currently doing.<br> 
+                        If you're just browsing the web, 4-gigabytes is fine, but for streaming and casual gaming you'll want at least 8-gigabytes.
+                    </div>
+                </div>
+            </div>
+  
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                        What sort of screen do I need?
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        What screen size you want depends on you.<br>
+                        Popular sizes are around 11 inches and 13 inches, because they're big enough to watch Netflix on, but keep your laptop's size down.<br>
+                        If you use a laptop a lot for work, it could be worth getting a 15-inch or 17-inch screen.
+                    </div>
+                </div>
+            </div>
+  
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                        Would a tablet work in place of a laptop/desktop?
+                    </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        If the system is being used just for surfing, email and watching video then a tablet may be an option instead of a laptop or desktop system.<br>
+                        Again, the user will be able to help you answer that question.
+                    </div>
+                </div>
+            </div>
+  
+           <div class="card">
+              <div class="card-header">
+                  <a class="card-link" data-toggle="collapse" href="#collapseSix">
+                      How much do you want to spend?
+                  </a>
+              </div>
+              <div id="collapseSix" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                      This is a big factor and it often requires some help from you based on the answers you find from the questions above.<br>
+                       If you only want to spend a minimum amount but want a Mac then you may have to look for a used system.<br>
+                       The budget will go a long way toward narrowing down choices.  
+                  </div>
+              </div>
+            </div>
+        </div> 
+        
+    </body>
+    
+</html>

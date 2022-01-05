@@ -1,0 +1,75 @@
+#<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+        
+            function highlight_answer_of_part1(id)
+            {
+                if (id == 'URU')
+                {
+                    document.getElementById(id).style.backgroundColor = 'green';
+                    document.getElementById("output_1").innerHTML = "Correct!";
+                }
+                else
+                {
+                    document.getElementById(id).style.backgroundColor = 'red';
+                    document.getElementById("output_1").innerHTML = "Incorrect!";
+                }
+            }
+            
+            function highlight_answer_of_part2()
+            {
+                if (document.querySelector('#answer').value == '2003')
+                {
+                    document.querySelector('#answer').style.background = "green";
+                    document.getElementById("output_2").innerHTML = "Correct!";
+                }
+                else
+                {
+                    document.querySelector('#answer').style.background = "red";
+                    document.getElementById("output_2").innerHTML = "Incorrect!";
+                }
+            }
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which country won the first-ever soccer World Cup in 1930?</h3>
+                <button type="button" class="btn btn-default" id="FRA" onclick="highlight_answer_of_part1(this.id)">France</button>
+                <button type="button" class="btn btn-default" id="BRA" onclick="highlight_answer_of_part1(this.id)">Brazil</button>
+                <button type="button" class="btn btn-default" id="URU" onclick="highlight_answer_of_part1(this.id)">Uruguay</button>
+                <button type="button" class="btn btn-default" id="ARG" onclick="highlight_answer_of_part1(this.id)">Argentina</button>
+                <button type="button" class="btn btn-default" id="GER" onclick="highlight_answer_of_part1(this.id)">Germany</button>
+            </div>
+                
+                <pr id="output_1"></pr>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In which year did Roger Federer win his first Wimbledon title?</h3>
+                <input type="text" id="answer" name="lname">
+                <button type="button" class="btn btn-default" onclick="highlight_answer_of_part2()">Check Answer</button>
+            </div>
+                
+                <pr id="output_2"></pr>
+
+        </div>
+    </body>
+</html>
