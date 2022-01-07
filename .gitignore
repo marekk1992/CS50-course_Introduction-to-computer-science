@@ -1,0 +1,3 @@
+# ignore ALL databases from repository (.db files)
+
+*.db
