@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <title>TechnoColor</title>
+        
+        <script>
+             function add_items_to_cart() 
+             {
+                var items_in_cart = document.getElementById('items_in_cart');
+                var number = items_in_cart.innerHTML;
+                number++;
+                items_in_cart.innerHTML = number;
+            }
+        </script>
+
+    </head>
+    
+    <body>
+        <div class="contacts_1">
+            <span class="fa fa-envelope"></span>
+            <span>technocolor@yahoo.com</span>
+        </div>
+        <div class="contacts_2">
+            <span class="fa fa-phone"></span>
+            <span>+370 600 54698</span>
+        </div>
+        
+        <div class="title">
+            <img src="images/logo.jpg" alt="Company logo" style="width:5%">
+            <span>T e c h n o</span>
+            <span style='color: blue'>c</span>
+            <span style='color: red'>o</span>
+            <span style='color: blue'>l</span>
+            <span style='color: yellow'>o</span>
+            <span style='color: blue'>r</span>
+        </div>
+        
+        <div>
+            <p id="description">Computers, notebooks, monitors, brand technology for entertainment and household.</p>
+            <div id="my_cart">
+                <p id="cart_text">My cart</p>
+                <i id="cart_icon" class="fas fa-shopping-cart"></i>
+                <b> </b><p id="items_in_cart">0</p>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Main</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="shop.html">Online shop</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="about_us.html">About us</a>
+            </li>
+            </ul>
+        </nav>
+        
+        <div class="shop">
+            <div id="topBar" style="width: 25%; height: 300px; float: left;"> 
+                <input type="text" id="search" name="search" class="form-control player-search" placeholder="Search for an item..." autocomplete="off">
+                    <div class="sortBy">
+                        <h4>Sort By:</h4>
+                        <select class="form-control">
+                            <option>Most Popular</option>
+                            <option>Price [Lowest to Highest]</option>
+                            <option>Price [Highest to Lowest]</option>
+                            <option>Name [A to Z]</option>
+                        </select>
+                    </div>
+            <div id="type">
+                <h4>Category</h4>
+                <div class="bump">
+                    <div class="box1">
+                    <input type="checkbox" id="notebooks">
+                    <label for="notebooks" class="check-box"></label>
+                    <p class="sorting">Notebooks</p>
+                </div>
+                <div class="box1">
+                    <input type="checkbox" id="dekstop-computers">
+                    <label for="dekstop-computers" class="check-box"></label>
+                    <p class="sorting">Dekstop computers</p>
+                </div>
+                <div class="box1">
+                    <input type="checkbox" id="monitors">
+                    <label for="monitors" class="check-box"></label>
+                    <p class="sorting">Monitors</p>
+                </div>
+                <div class="box1">
+                    <input type="checkbox" id="tablets">
+                    <label for="tablets" class="check-box"></label>
+                    <p class="sorting">Tablets</p>
+                </div>
+                </div>
+            </div>
+            <div id="priceRange" class="clearfix">
+                <h4>Price Range</h4>
+                <div class="bump">
+                    <div id="slider"></div>
+                    <div class="minVal">
+                        <input value="300" size="6" class="minPrice"/>
+                    </div>
+                    <div class="maxVal">
+                        <input value="14,000" size="6" class="maxPrice"/>
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+            <div id="List" style="margin-left: 20%; height: 123px; width: 1000px">
+                <div class="item_1">
+                    <div class="photo"><img src="images/item.jpg" alt="Apple MacBook Air"></div>
+                    <div class="info">
+                        <p class="item_title">Apple MacBook Air 2020 13.3"</p>
+                        <hr>
+                        <p>Processor: <strong>Apple M1</strong></p>
+                        <p>Hard drive SSD: <strong>256 GB</strong></p>
+                        <p>Graphic card: <strong>Not specified</strong></p>
+                        <hr>
+                        <button type="button" class="add_to_cart" onclick="add_items_to_cart()">Add to cart</button> 
+                    </div>
+                </div>
+                <div class="item_2">
+                    <div class="photo"><img src="images/item.jpg" alt="Apple MacBook Air"></div>
+                    <div class="info">
+                        <p class="item_title">Apple MacBook Air 2020 13.3"</p>
+                        <hr>
+                        <p>Processor: <strong>Apple M1</strong></p>
+                        <p>Hard drive SSD: <strong>256 GB</strong></p>
+                        <p>Graphic card: <strong>Not specified</strong></p>
+                        <hr>
+                        <button type="button" class="add_to_cart" onclick="add_items_to_cart()">Add to cart</button>  
+                    </div>
+                </div>
+                <div class="item_3">
+                    <div class="photo"><img src="images/item.jpg" alt="Apple MacBook Air"></div>
+                    <div class="info">
+                        <p class="item_title">Apple MacBook Air 2020 13.3"</p>
+                        <hr>
+                        <p>Processor: <strong>Apple M1</strong></p>
+                        <p>Hard drive SSD: <strong>256 GB</strong></p>
+                        <p>Graphic card: <strong>Not specified</strong></p>
+                        <hr>
+                        <button type="button" class="add_to_cart" onclick="add_items_to_cart()">Add to cart</button>  
+                    </div>
+                </div>
+            </div>
+            
+            <div id="List2" style="margin-left: 20%; height: 100px; width: 1000px">
+                <div class="item_1">
+                    <div class="photo"><img src="images/item.jpg" alt="Apple MacBook Air"></div>
+                    <div class="info">
+                        <p class="item_title">Apple MacBook Air 2020 13.3"</p>
+                        <hr>
+                        <p>Processor: <strong>Apple M1</strong></p>
+                        <p>Hard drive SSD: <strong>256 GB</strong></p>
+                        <p>Graphic card: <strong>Not specified</strong></p>
+                        <hr>
+                        <button type="button" class="add_to_cart" onclick="add_items_to_cart()">Add to cart</button>  
+                    </div>
+                </div>
+                <div class="item_2">
+                    <div class="photo"><img src="images/item.jpg" alt="Apple MacBook Air"></div>
+                    <div class="info">
+                        <p class="item_title">Apple MacBook Air 2020 13.3"</p>
+                        <hr>
+                        <p>Processor: <strong>Apple M1</strong></p>
+                        <p>Hard drive SSD: <strong>256 GB</strong></p>
+                        <p>Graphic card: <strong>Not specified</strong></p>
+                        <hr>
+                        <button type="button" class="add_to_cart" onclick="add_items_to_cart()">Add to cart</button>  
+                    </div>
+                </div>
+                <div class="item_3">
+                    <div class="photo"><img src="images/item.jpg" alt="Apple MacBook Air"></div>
+                    <div class="info">
+                        <p class="item_title">Apple MacBook Air 2020 13.3"</p>
+                        <hr>
+                        <p>Processor: <strong>Apple M1</strong></p>
+                        <p>Hard drive SSD: <strong>256 GB</strong></p>
+                        <p>Graphic card: <strong>Not specified</strong></p>
+                        <hr>
+                        <button type="button" class="add_to_cart" onclick="add_items_to_cart()">Add to cart</button>  
+                    </div>
+                </div>
+            </div>
+            
+            <div id="List3" style="margin-left: 20%; height: 100px; width: 1000px">
+                <div class="item_1">
+                    <div class="photo"><img src="images/item.jpg" alt="Apple MacBook Air"></div>
+                    <div class="info">
+                        <p class="item_title">Apple MacBook Air 2020 13.3"</p>
+                        <hr>
+                        <p>Processor: <strong>Apple M1</strong></p>
+                        <p>Hard drive SSD: <strong>256 GB</strong></p>
+                        <p>Graphic card: <strong>Not specified</strong></p>
+                        <hr>
+                        <button type="button" class="add_to_cart" onclick="add_items_to_cart()">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item_2">
+                    <div class="photo"><img src="images/item.jpg" alt="Apple MacBook Air"></div>
+                    <div class="info">
+                        <p class="item_title">Apple MacBook Air 2020 13.3"</p>
+                        <hr>
+                        <p>Processor: <strong>Apple M1</strong></p>
+                        <p>Hard drive SSD: <strong>256 GB</strong></p>
+                        <p>Graphic card: <strong>Not specified</strong></p>
+                        <hr>
+                        <button type="button" class="add_to_cart" onclick="add_items_to_cart()">Add to cart</button> 
+                    </div>
+                </div>
+                <div class="item_3">
+                    <div class="photo"><img src="images/item.jpg" alt="Apple MacBook Air"></div>
+                    <div class="info">
+                        <p class="item_title">Apple MacBook Air 2020 13.3"</p>
+                        <hr>
+                        <p>Processor: <strong>Apple M1</strong></p>
+                        <p>Hard drive SSD: <strong>256 GB</strong></p>
+                        <p>Graphic card: <strong>Not specified</strong></p>
+                        <hr>
+                        <button type="button" class="add_to_cart" onclick="add_items_to_cart()">Add to cart</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    
+</html>

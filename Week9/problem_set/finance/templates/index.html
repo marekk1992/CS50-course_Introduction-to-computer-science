@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <form action="/" method="get">
+         <div class="section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Name</th>
+                            <th>Shares</th>
+                            <th>Price</th>
+                            <th>TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TODO: Loop through the database entries to display them in this table -->
+                        {% if not user_stocks %}
+                            <tr>
+                                <td class="stocks">CASH</td>
+                                <td class="stocks"></td>
+                                <td class="stocks"></td>
+                                <td class="stocks"></td>
+                                <td class="stocks">{{ user_cash | usd }}</td>
+                            </tr>
+                        {% else %}
+                            {% for user_stock in user_stocks %}
+                            <tr>
+                                <td class="stocks">{{ user_stock.symbol }}</td>
+                                <td class="stocks">{{ user_stock.name }}</td>
+                                <td class="stocks">{{ user_stock.stocks }}</td>
+                                <td class="stocks">{{ user_stock.stock_price | usd }}</td>
+                                <td class="stocks">{{ user_stock.total_price | usd }}</td>
+                            </tr>
+                            {% endfor %}
+                            <tr>
+                                <td>CASH</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>{{ user_cash | usd }}</td>
+                            </tr>
+                        {% endif %}
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><b>{{ total_cash | usd }}</b></td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+    </form>
+{% endblock %}
